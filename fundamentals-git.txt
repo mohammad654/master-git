@@ -1,6 +1,6 @@
 
     Git  : is distributed version control system
-
+11111111111111111
      To Know  Your user name             got ot user/git/ config or git config user.name
      List of Git                         git config --list (uit priss q) git config -l
      user name                           git config user.name ""
