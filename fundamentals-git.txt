@@ -56,12 +56,6 @@ git ls-tree HEAD
 _____________________________________________________________
 
 
-echo "# bootstrap" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:mohammad654/bootstrap.git
-git push -u origin master
 
 _____________________________________________________________
 
@@ -133,6 +127,7 @@ Clear               :  git stash clear
     git commit -m "from my localhost"
     git remote add origin https://github.com/mohammad654/pro.git
     git push  origin master
+    git pull origin
 
 2-Push
     git init
