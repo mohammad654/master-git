@@ -1,0 +1,136 @@
+
+    Git  : is distributed version control system
+11111111111111111
+     To Know  Your user name             got ot user/git/ config or git config user.name
+     List of Git                         git config --list (uit priss q) git config -l
+     user name                           git config user.name ""
+     user Email                          git config user.email ""
+     Alias                               git config --global alias.st status
+
+
+ Config                             
+    git config --global --edit 
+    git help config
+    git config --show-origin
+    git config --global --edit
+
+
+Branch 
+    Git Branch               :  git branch
+    Create Branch            :  git branch scroll(name of branch)
+    Check Out                :  git checkout scroll
+    Remove Branch            :  git branch -d(-D) scroll
+    Create and Check Out     :  git checkout -b scroll
+    Rename                   :  git branch -m New Name 
+
+
+    
+
+     Commit                               git log  or git log -n 4
+                                          git log --since=2020-04-01 or until
+                                          git log --author=''
+                                          git log --grep='mo'
+
+     Staging index               :        The area before the repository
+     Master branch               :        The main branch
+
+     Change                      :        git diff  in Stage Area=> git diff --staged OR git diff --cached
+                                 :        git diff --color-words
+    Deleted                      :        git rm my_file
+    Rename                       :        git mv  file1 file2 OR git mv text3.txt my/text4.txt
+    Compare                      :        git diff 06374fa6..06374fa6 Or git log --oneline
+    Git Hard Reset to HEAD       :        git reset --hard HEAD  or HEAD~2
+                                 :        git reset --soft HEAD~3
+                                 :        git reset HEAD~
+??
+git config  --global core.editor "notepad.exe"
+git revert 425cbf0
+git ls-tree HEAD
+
+
+   
+1-Pull
+  1- path of GitHub :Cd/ Programmeren/1-HTML CSS
+  2- make director :Cd/ Programmeren/1-HTML CSS>mkdir my_GitHub
+  3- Use Director :  cd/Programmeren\1-HTML CSS\my_GitHub
+  4- Clone : git clone path of GitHub  (https://github.com/mohammad654/Git_Hub.git)
+  5- Director : dir
+  6- git status
+  7- git add * -A --all
+  8- git reset head  (remove)
+  9- git commit -m "Great by line"
+  10-git push origin master
+  
+2-Pull
+  1-  open cmd  than cd/ than location (Programmeren\leren\GitHub\course)
+  2-  git clone   Link of Clone  or download
+  3-  git add css/index.css or * all
+  4-  git reset head css/index.css
+  5-  git config --global user.name "mohammad654"
+  6-  git config --global user.email "mohammad.ali.shikhi.55@gmail.com"
+  7-  git commit -m  "Created the main project"
+  8-  git push
+
+
+
+_____________________________________________________________
+
+
+
+Generating a new SSH key
+    ssh-keygen
+    ssh-keygen -t rsa -b 4096 -C "mohammad.ali.shikhi.55@gmail.com"
+    shh -t git@gitHub .con
+Git Change          : git diff
+Change staged      : git diff --staged     git diff --cached
+Color               : git diff --color-words
+Git version   :      git rm file1.pub
+
+
+Create File         :   echo "Hello World "> README.md
+Remove              :   git reset
+show commit         :   git log --online
+
+ShortCut :   git commit -am "shortcut"
+Amend Commit   : git commit --amend -m ""
+              Commit
+Number of Commit    : git log -n 3
+Time  of Commit      : git log  --since=2020/03/03
+Author              :git log --author="mohammad"
+
+           Stash
+Save later          :   git stash
+Pop                 :   git stash pop
+Git Stash           :   git stash list
+More Stash ID       :   git stash drop stash @{1}
+Remove Stash         :  git stash  drop
+Git Stash Show :    :   git stash show
+Clear               :  git stash clear
+
+    git stash apply
+    git fetch
+    
+    git remote  -v 
+    git --bare init
+  
+    git remote -v
+    git diff
+    git log
+    
+1-Push
+    git init
+    git add .
+    git commit -m "from my localhost"
+    git remote add origin https://github.com/mohammad654/pro.git
+    git push  origin master
+    git remote add origin git@github.com:mohammad654/bootstrap.git
+    git push -u origin master
+
+2-Push
+    git init
+    git add README.md
+    git add .
+    git commit -m "first commit"
+    git remote add origin https://github.com/userName/repoName.git
+    git push --force origin master 
+
