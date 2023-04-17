@@ -1,6 +1,6 @@
 
     Git  : is distributed version control system
-    GitHub : platform  pull
+    GitHub : platform 
 
 
      To Know  which  do you have :        git --version
