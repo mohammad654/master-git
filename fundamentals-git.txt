@@ -1,22 +1,39 @@
 
     Git  : is distributed version control system
-    GitHub : platform 
+
+     To Know  Your user name             got ot user/git/ config or git config user.name
+     List of Git                         git config --list (uit priss q) git config -l
+     user name                           git config user.name ""
+     user Email                          git config user.email ""
+     Alias                               git config --global alias.st status
 
 
-     To Know  which  do you have :        git --version
-     To Know  Your user name     :        got ot user/git/ config or git config user.name
-     List of Git                 :        git config --list
-     user name                   :        git config user.name "" To Know Your email git config user.email
-     user Email                  :        git config user.email ""
-     Commit                      :        git log  or git log -n 4
+ Config                             
+    git config --global --edit 
+    git help config
+    git config --show-origin
+    git config --global --edit
+
+
+Branch 
+    Git Branch               :  git branch
+    Create Branch            :  git branch scroll(name of branch)
+    Check Out                :  git checkout scroll
+    Remove Branch            :  git branch -d(-D) scroll
+    Create and Check Out     :  git checkout -b scroll
+    Rename                   :  git branch -m New Name 
+
+
+    
+
+     Commit                               git log  or git log -n 4
                                           git log --since=2020-04-01 or until
-                                         git log --author=''
+                                          git log --author=''
                                           git log --grep='mo'
 
      Staging index               :        The area before the repository
      Master branch               :        The main branch
-     Head branch                 :        The pointer to tip of current branch in repository
-     Initialize repository       :        git init
+
      Change                      :        git diff  in Stage Area=> git diff --staged OR git diff --cached
                                  :        git diff --color-words
     Deleted                      :        git rm my_file
@@ -53,19 +70,12 @@ git ls-tree HEAD
   6-  git config --global user.email "mohammad.ali.shikhi.55@gmail.com"
   7-  git commit -m  "Created the main project"
   8-  git push
-_____________________________________________________________
 
 
 
 _____________________________________________________________
 
-git remote add origin git@github.com:mohammad654/bootstrap.git
-git push -u origin master
-_____________________________________________________________
 
- git config  --global --unset
- git config  --global --edit
- git config --global user.email
 
 Generating a new SSH key
     ssh-keygen
@@ -75,16 +85,11 @@ Git Change          : git diff
 Change staged      : git diff --staged     git diff --cached
 Color               : git diff --color-words
 Git version   :      git rm file1.pub
-Git Alias       :      git config --global alias.st status
-Git Branch       :    git branch
-Create Branch    :     git branch scroll(name of branch)
-Check Out        :     git checkout scroll
-Remove Branch    :      git branch -d scroll
-Create and Check Out :  git checkout -b scroll
-Rename              :   git branch -m "New Name "
+
+
 Create File         :   echo "Hello World "> README.md
 Remove              :   git reset
-show commit         : git log --online
+show commit         :   git log --online
 
 ShortCut :   git commit -am "shortcut"
 Amend Commit   : git commit --amend -m ""
@@ -109,15 +114,6 @@ Clear               :  git stash clear
     git --bare init
   
     git remote -v
-    git push origin master
-
-    git config -l
-    git help config
-    git config --global user.email
-    git config --global --unset user.email
-    git config --show-origin
-    git config --global --edit
-    
     git diff
     git log
     
@@ -127,7 +123,8 @@ Clear               :  git stash clear
     git commit -m "from my localhost"
     git remote add origin https://github.com/mohammad654/pro.git
     git push  origin master
-    git pull origin
+    git remote add origin git@github.com:mohammad654/bootstrap.git
+    git push -u origin master
 
 2-Push
     git init
@@ -137,8 +134,3 @@ Clear               :  git stash clear
     git remote add origin https://github.com/userName/repoName.git
     git push --force origin master 
 
-Ignore
-
-config --global   text1.txt ~/.gitignore_global
-
-Remove :   git rm --cached  text1.txt
